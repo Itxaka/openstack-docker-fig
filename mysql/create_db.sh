@@ -5,7 +5,7 @@
 echo "=> Creating database for keystone"
 RET=1
 while [[ RET -ne 0 ]]; do
-  sleep 5
+  sleep 1
   mysql -uroot -e "CREATE DATABASE keystone"
   RET=$?
 done
@@ -13,7 +13,7 @@ done
 echo "=> Creating database for glance"
 RET=1
 while [[ RET -ne 0 ]]; do
-  sleep 5
+  sleep 1
   mysql -uroot -e "CREATE DATABASE glance"
   RET=$?
 done
@@ -21,7 +21,7 @@ done
 echo "=> Creating database for nova"
 RET=1
 while [[ RET -ne 0 ]]; do
-  sleep 5
+  sleep 1
   mysql -uroot -e "CREATE DATABASE nova"
   RET=$?
 done
@@ -29,7 +29,7 @@ done
 echo "=> Creating database for neutron"
 RET=1
 while [[ RET -ne 0 ]]; do
-  sleep 5
+  sleep 1
   mysql -uroot -e "CREATE DATABASE neutron"
   RET=$?
 done
@@ -37,7 +37,7 @@ done
 echo "=> Creating database for horizon"
 RET=1
 while [[ RET -ne 0 ]]; do
-  sleep 5
+  sleep 1
   mysql -uroot -e "CREATE DATABASE horizon"
   RET=$?
 done
@@ -45,7 +45,7 @@ done
 echo "=> Creating database for ceilometer"
 RET=1
 while [[ RET -ne 0 ]]; do
-  sleep 5
+  sleep 1
   mysql -uroot -e "CREATE DATABASE ceilometer"
   RET=$?
 done
@@ -53,7 +53,7 @@ done
 echo "=> Creating database for cinder"
 RET=1
 while [[ RET -ne 0 ]]; do
-  sleep 5
+  sleep 1
   mysql -uroot -e "CREATE DATABASE cinder"
   RET=$?
 done

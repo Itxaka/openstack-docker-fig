@@ -17,6 +17,7 @@ ADD mysqld_charset.cnf /etc/mysql/conf.d/mysqld_charset.cnf
 # Add MySQL scripts
 ADD create_mysql_admin_user.sh /create_mysql_admin_user.sh
 ADD import_sql.sh /import_sql.sh
+ADD create_db.sh /create_db.sh
 ADD run.sh /run.sh
 RUN chmod 755 /*.sh
 

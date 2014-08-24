@@ -1,10 +1,10 @@
-keystone:
-  build: keystone
-  links:
-   - mysql
-
 mysql:
   build: mysql/
 
 rabbitmq:
   build: rabbitmq/
+
+keystone:
+  build: keystone
+  links:
+   - mysql
