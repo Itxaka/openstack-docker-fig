@@ -1,0 +1,13 @@
+keystone:
+  build: keystone/
+  command:
+  ports:
+   - "5000:5000"
+  links:
+   - mysql
+
+mysql:
+  build: mysql/
+  command: /bin/bash /opt/mysql_startup.sh
+  ports:
+   - "3306:3306"
